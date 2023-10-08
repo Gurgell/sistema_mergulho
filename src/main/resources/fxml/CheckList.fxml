@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3028.0" prefWidth="1157.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.empresa.controller.CheckListController"> -->
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="928.0" prefWidth="1157.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.empresa.controller.CheckListController"> 
+   <content>
+      <VBox depthTest="DISABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="3200.0" prefWidth="1141.0">
+         <children>
+            <HBox maxHeight="1.7976931348623157E308" prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #0C6F00;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <GridPane prefHeight="42.0" prefWidth="1163.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1 - ITENS ABORDADOS NO CHECK LIST NA SUPERFICIE, REGISTRADOS NA BLACK BOX" wrappingWidth="775.76953125" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="140.0" prefWidth="1099.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="42.0" prefWidth="1138.0">
+                    <columnConstraints>
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox1" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Realizado testes de comunicação entre a equipe, ponte, controle de DP e operador do guincho da embarcação,  incluindo gravaçao de audio e video (operador de guincho deve informar a fundionalidade do sistema e pressao de emergencia acima de 160BAR). Utilizar a técnica tipo &quot;ECO&quot;, sempre respondendo a mensagem recebida durante a comunicação. A comunicação deverá ser de forma pausada e clara durante o check list." wrappingWidth="1073.13671875" GridPane.columnIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1.1" wrappingWidth="20.13671875" />
+                     </children>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets right="1.0" />
+               </padding>
+            </HBox>
+            <HBox maxHeight="1.7976931348623157E308" prefHeight="140.0" prefWidth="1099.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1341.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox2" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1.2" wrappingWidth="18.13671875" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhadores devem estar cientes do serviço, local de trabalho e riscos envolvidos.  Mergulhador deve informar qual o serviço a ser executado." wrappingWidth="766.525390625" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="1098.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1416.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhador com ferramentas adequadas ao serviço" wrappingWidth="284.22265625" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1.3" />
+                        <CheckBox fx:id="checkBox3" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1341.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Supervisor deverá conversar com os mergulhadores antes e após cada mergulho, para atualização dos serviços e situação no local de trabalho, e orientar os mergulhadores sobre os riscos envolvidos, procedimentos e outros assuntos" wrappingWidth="872.09375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1.4" />
+                        <CheckBox fx:id="checkBox4" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1292.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox5" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhadores estão bem fisicamente e psicologicamente para as atividades de mergulho" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1.5" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1290.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox6" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Capacetes e Máscaras (capuz com perfeita fixação) colocados(as) e neck dam instalado corretamente em bom estado, ajuste adequado e elasticidade adequada." GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1.6" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1287.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhadores com roupa, corpete, nadadeira, cinto de chumbo (caso necessario), faca de mergulho, colete flutuador, mosquetão de resgate, profundímetro e umbilical acoplado ao corpete" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1.7" />
+                        <CheckBox fx:id="checkBox7" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1364.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox8" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema secundário e individual (quadros/garrafas) de ar com pressão mínima de 160/190 bar ou de acordo com a profundidade, aberto, regulado e testado" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1.8" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1337.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox9" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Teste de ar principal, secundário, garrafas do sinete/cesta de mergulho (mínimo 160 bar), emergência individual e válvula de não retorno do capacete/máscara e do sinete/cesta de mergulho, esta atuando?" wrappingWidth="1073.765625" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1.9" wrappingWidth="26.5390625" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1225.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox10" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Para fixação das ações caso ocorra  alagamento do capacete, proceder da seguinte forma:  Abrir lentamente a ventilação do capacete, inclinar a cabeça levemente para frente e para baixo e acionar botão da válvula 2º estágio." wrappingWidth="1068.578125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1.10" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #0C6F00;">
+               <children>
+                  <GridPane prefHeight="42.0" prefWidth="1140.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="WHITE" nodeOrientation="LEFT_TO_RIGHT" strokeType="INSIDE" strokeWidth="0.0" text="2 - ITENS ABORDADOS DURANTE O CHECK LIST DURANTE A DESCIDA E REGISTRADO NA BLACKBOX" textOrigin="CENTER" wrappingWidth="907.970703125" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1280.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox11" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Verificar o perfeito posicionamento do umbilical principal e dos individuais, evitando cotes e aprisionamento dos mesmos." GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2.1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="1154.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1253.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox12" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quando utilizando o sinete de mergulho, abrir a válvula de equalização da bolha, facilitando a entrada do sinete na água e após totalmente submerso fechar a valvula e restabelecer a bolha no fundo." GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2.2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1328.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Verificar a integridade do soquete com o cabo de aço principal e atentar-se a distancia da cesta/sinete ao lastro e/ou leito marinho" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2.3" />
+                        <CheckBox fx:id="checkBox13" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1303.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhadores posicionados adequadamente no sinete/cesta de mergulho ou local do salto e prontos para iniciar a descida/salto" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2.4" />
+                        <CheckBox fx:id="checkBox14" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1374.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox15" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhadores compensando as vias aéreas normalmente, verificar sempre a velocidade de descida, caso o sistema de lançamento tenha dispositivo de velocidade, o operador de guincho de informar o supervisor a velocidade.  Após chegar no fundo, realizar movimento com o capacete (inclina para frente, inclina para trás, inclina para o lado direito e para o lado esquerdo), verificando se existe entrada de água" wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2.5" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #0C6F00;">
+               <children>
+                  <GridPane prefHeight="43.0" prefWidth="1216.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="3 - ITENS ABORDADOS APÓS A CHEGADA E PERMANENCIA NA PROFUNDIDADE DE TRABALHO E REGISTRADO NA BLACKBOX" wrappingWidth="1139.81005859375" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1334.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox16" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Executar teste de estanqueidade o capacete (inclinando a cabeça para frente, lado direito, esquerdoe para tras) a fim de detectar indicios de alagamento e ajuste do segundo estagio (sintonia fina) do mesmo. Caso ocorra uma variaçao de 10m de profundidade, realizar novo ajuste do segundo estagio (sintonia fina) do capacete." wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3.1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1272.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Se atentar ao correto posicionamento do umbilical durante o mergulho evitando aprisionamentio durante seu trajeto, permanencia e retorno do local de trabalho." GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <CheckBox fx:id="checkBox17" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3.2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1300.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox18" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Em intervalos regulares (entre 5 à 10 minutos), o supervisor deverá perguntar aos mergulhadores os seguintes itens: Como está a pressão da garrafa individual, pressão das garrafas da cesta/sinete; como está o posicionamento do umbilical (sempre livre e nunca amarrado e o bellman deve filmar e confirmar o tensionamento padrão); Verificação das fivelas e fixação do cinto de latro e do aqualung; Verificação da faca de mergulho; e verificar o sistema de gravação (áudio e vídeo)." wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3.3" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1356.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O supervisor &quot;DEVE&quot; questionar a maior profundidade atingida pelo mergulhador, e caso seja instalado cabo guia, deve solicitar o seu tensionamento, evitando muita folga, e caso tenham outros equipamentos (Mangueiras, cabo de solda, cabos de corte) e questionar aos mergulhadores, sobre as condições de operação, em relação a um possível resgate de emergência." wrappingWidth="1067.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3.4" />
+                        <CheckBox fx:id="checkBox19" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1339.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quando ocorrer situações em que o mergulhador tenha que ficar estabilizado em um determinado local, por um período prolongado (4 minutos), o mergulhador deve se afastar do local e realizar movimentos suaves por um (1) minuto" wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3.5" />
+                        <CheckBox fx:id="checkBox20" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #0C6F00;">
+               <children>
+                  <GridPane prefHeight="43.0" prefWidth="1158.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="4 - ITENS ABORDADOS DURANTE A SUBIDA E REGISTRADO NA BLACKBOX" wrappingWidth="673.287109375" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1392.0">
+                    <columnConstraints>
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhador deve informar ao supervisor o início de sua subida e o supervisor deve confirmar o entendimento e se estão no interior com as mãos protegidas no seu interior" wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.1" />
+                        <CheckBox fx:id="checkBox21" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1262.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O supevisor deve monitorar a subida do mergulhador/sinete/cesta de mergulho, ficando atento para velocidade de subida não ultrapassar 9 m/min, caso o sistema de lançamento possua o sensor de velocidade, o operador do guincho deve manter a velocidade em 9 m/min." wrappingWidth="1067.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.2" />
+                        <CheckBox fx:id="checkBox22" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1325.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O supervisor deve perguntar se os mergulhadores estão compensando normalmente" wrappingWidth="450.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.3" />
+                        <CheckBox fx:id="checkBox23" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1424.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O supervisor deve alertar aos mergulhadores, para que fiquem atentos na passagem da Zona de Variação de maré (ZVM)" wrappingWidth="1067.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4.4" />
+                        <CheckBox fx:id="checkBox24" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #0C6F00;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1291.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="5 - ITENS VERIFICADOS EM CHECK LIST, S/ REGISTRO NA BLACKBOX" wrappingWidth="615.76953125" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1175.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox25" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Verificar a velocidade do vento, correnteza, altura média das ondulações de superfície (SWELL) e se estão favoráveis para um acesso seguro da cesta de mergulho/sinete/cesta de emergência e permanência do mergulhador no local de trabalho" wrappingWidth="1067.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1284.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bandeira Alfa instalada e visível" wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <CheckBox fx:id="checkBox26" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1160.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O equipamento autônomo de fuga, encontra-se disponível e em condições de uso" wrappingWidth="438.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.3" />
+                        <CheckBox fx:id="checkBox27" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1235.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Analisador de gases múltiplos se encontra carregado, ligado e operando nos locais indicados" wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.4" />
+                        <CheckBox fx:id="checkBox28" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1204.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Escada de acesso à água está posicionada e fixada" wrappingWidth="1067.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.5" />
+                        <CheckBox fx:id="checkBox29" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1173.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox30" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Câmara de descompressão e seus acessórios operacionais" wrappingWidth="308.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.6" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1272.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="D.P. operacional e com luz verde" wrappingWidth="177.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.7" />
+                        <CheckBox fx:id="checkBox31" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1367.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="35.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1086.0" minWidth="10.0" prefWidth="1079.0" />
+                        <ColumnConstraints maxWidth="32.0" minWidth="21.0" prefWidth="27.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fazer uma inspeção no capacete PRÉ e PÓS mergulho e anotar a identificação, neck dam e máscara de mergulho, transcrevendo para o registro RQ-CLI-0125" wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.8" />
+                        <CheckBox fx:id="checkBox32" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1310.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhadores estao cientes do local de trabalho" wrappingWidth="1067.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.9" />
+                        <CheckBox fx:id="checkBox33" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1253.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Garrafa individual com 1º estágio acoplado com a válvula de sobre pressão instalada sem vazamentos (mínimo 190 bar -  (NORMAM 15 rev3 0502 - i)). Mostrar o manômetro de pressão na imagem para o supervisor" wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.10" />
+                        <CheckBox fx:id="checkBox34" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1289.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O supervisor &quot;NUNCA&quot; deve ficar sozinho operando o mergulho no controle, sempre ter uma pessoa ao seu lado." wrappingWidth="1067.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.11" />
+                        <CheckBox fx:id="checkBox35" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="54.0" prefWidth="1288.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O mergulhador poderá ancorar o seu umbilical próximo ao local de trabalho, com dispositivo de soltura rápida, porém, deve analisar o local adequado para instalação, juntamente com o bellan ou não, evitando que o mesmo fique preso.  Após a instalação, o mergulhador verifica o funcionamento do mosquetão de soltura rápidaSendo aprovado, instalar o dispositivo e dar continuidade no trabalho, sempre avaliando se as condições do local mudaram." wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <CheckBox fx:id="checkBox36" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.12" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="55.0" prefWidth="1236.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O mergulhador poderá ancorar o seu umbilical próximo ao local de trabalho, com dispositivo de soltura rápida, porém, deve analisar o local adequado para instalação, juntamente com o bellan ou não, evitando que o mesmo fique preso.  Após a instalação, o mergulhador verifica o funcionamento do mosquetão de soltura rápidaSendo aprovado, instalar o dispositivo e dar continuidade no trabalho, sempre avaliando se as condições do local mudaram." wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.13" />
+                        <CheckBox fx:id="checkBox37" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="55.0" prefWidth="1255.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <CheckBox fx:id="checkBox38" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Portal de segurança posicionado na profundidade de trabalho, caso necessário" wrappingWidth="1067.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.14" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="55.0" prefWidth="1293.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O mergulhador poderá ancorar o seu umbilical próximo ao local de trabalho, com dispositivo de soltura rápida, porém, deve analisar o local adequado para instalação, juntamente com o bellan ou não, evitando que o mesmo fique preso.  Após a instalação, o mergulhador verifica o funcionamento do mosquetão de soltura rápidaSendo aprovado, instalar o dispositivo e dar continuidade no trabalho, sempre avaliando se as condições do local mudaram." wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <CheckBox fx:id="checkBox39" alignment="CENTER" mnemonicParsing="false" GridPane.columnIndex="2">
+                           <opaqueInsets>
+                              <Insets top="10.0" />
+                           </opaqueInsets>
+                        </CheckBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.15" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="55.0" prefWidth="1142.0" style="-fx-background-color: #0C6F00;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMAÇÕES DAS CONTIGÊNCIAS UTILIZADAS NO MERGULHO" wrappingWidth="585.76953125" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font></Text>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="55.0" prefWidth="1298.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Todos os mergulhos serão realizados utilizando uma contingência “default”, ou seja, para cada perfil de mergulho planejado, será utilizado o valor de tempo imediatamente inferior ao do limite de tempo sem descompressão para aquela profundidade - Essa contingência “default” já contempla os esforços realizados em deslocamento, limpezas e utilização de ferramentas (tirfor, talhas, etc.)." wrappingWidth="1067.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.16" />
+                        <CheckBox fx:id="checkBox40" mnemonicParsing="false" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3;">
+               <children>
+                  <GridPane prefHeight="55.0" prefWidth="1300.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O mesmo mergulho deverá ser acrescido de nova contingência. Por exemplo, caso a correnteza esteja superior a 1,5 nós, aplicar mais uma contingência pulando para o valor de tempo imediatamente inferior ao utilizando anteriormente" wrappingWidth="1068.76953125" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <CheckBox fx:id="checkBox41" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.17" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="140.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <GridPane prefHeight="55.0" prefWidth="1306.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="95.0" minWidth="0.0" prefWidth="1.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1073.0" minWidth="10.0" prefWidth="1072.0" />
+                     <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="94.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O mesmo mergulho deverá ainda ser acrescido de mais uma contingência. Por exemplo, caso a temperatura da água esteja abaixo de 20 graus ou acima de 27 graus, aplicar mais uma contingência pulando para o valor de tempo imediatamente inferior ao utilizando anteriormente." wrappingWidth="1067.287109375" GridPane.columnIndex="1" GridPane.halignment="LEFT" />
+                        <CheckBox fx:id="checkBox42" mnemonicParsing="false" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5.18" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <Pane prefHeight="686.0" prefWidth="1141.0">
+               <children>
+                  <GridPane layoutX="12.0" layoutY="63.0" prefHeight="224.0" prefWidth="1118.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="497.0" minWidth="10.0" prefWidth="63.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1073.0" minWidth="10.0" prefWidth="1055.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTA 1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
+                        <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTA 4" wrappingWidth="51.806640625" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
+                        <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTA 2" wrappingWidth="61.275390625" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
+                        <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTA 3" wrappingWidth="61.275390625" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Caso seja aproveitado o mergulho para realização de simulados, o tempo disponível será de no mínimo 10 minutos, não sendo permitido o aproveitamento com tempo disponível menor." wrappingWidth="1073.640625" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O cilindro com capacidade de 7 l não pode ser utilizado a profundides superiores a 30 metros OU em excursão em que sua autonomia não permita o retorno segura considerando consumo de 62,5 lpm a profundidade;" wrappingWidth="1074.0546875" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O Supervisor deverá estar sempre acompanhando os mergulhos conforme descrição no check list acima; " wrappingWidth="938.755859375" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Qualquer elemento de importância para a segurança ou interferência física das pessoas envolvidas nas operações deverá ser relatado no campo de observações;" wrappingWidth="1069.560546875" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="gravar_checklist" layoutX="883.0" layoutY="380.0" mnemonicParsing="false" onAction="#btn_gravar_checklist" text="Gravar Checklist" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

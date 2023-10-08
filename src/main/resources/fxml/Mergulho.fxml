@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="985.0" prefWidth="1316.0" style="-fx-background-image: Image URL; -fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.empresa.controller.MergulhoController">
+   <children>
+      <GridPane layoutX="512.0" layoutY="162.0" prefHeight="221.0" prefWidth="235.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="textoChegouSuperficie" strokeType="OUTSIDE" strokeWidth="0.0" text="C.S" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text fx:id="textoProfundidade" strokeType="OUTSIDE" strokeWidth="0.0" text="Prof (m)" wrappingWidth="58.4609375" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text fx:id="textoTab" strokeType="OUTSIDE" strokeWidth="0.0" text="TAB" wrappingWidth="30.4609375" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text fx:id="textoGr" strokeType="OUTSIDE" strokeWidth="0.0" text="G.R" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtcs" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" promptText="00:00" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <TextField fx:id="txtprof" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" promptText="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <TextField fx:id="txttab" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" promptText="00/00" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <TextField fx:id="txtgr" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" promptText="A" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Text fx:id="textoIs" strokeType="OUTSIDE" strokeWidth="0.0" text="I.S" wrappingWidth="19.169921875" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text fx:id="textoGra" strokeType="OUTSIDE" strokeWidth="0.0" text="G.R.A" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text fx:id="textoNgr" strokeType="OUTSIDE" strokeWidth="0.0" text="N.G.R" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text fx:id="textoTnr" strokeType="OUTSIDE" strokeWidth="0.0" text="T.N.R" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text fx:id="textoTemp" strokeType="OUTSIDE" strokeWidth="0.0" text="TEMP ºC" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtis" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <TextField fx:id="txtgra" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <TextField fx:id="txtngr" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <TextField fx:id="txttnr" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <TextField fx:id="txttemp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" promptText="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <TextField fx:id="txtds" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" promptText="00:00" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Text fx:id="textoDeixouSuperficie" strokeType="OUTSIDE" strokeWidth="0.0" text="D.S" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtdf" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="48.0" promptText="00:00" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <TextField fx:id="txttf" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" mouseTransparent="true" prefHeight="25.0" prefWidth="48.0" promptText="-" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Text fx:id="textoDeixouFundo" strokeType="OUTSIDE" strokeWidth="0.0" text="D.F" wrappingWidth="25.875" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text fx:id="textoTempoFundo" strokeType="OUTSIDE" strokeWidth="0.0" text="T.F" wrappingWidth="21.4609375" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+         </children>
+      </GridPane>
+      <GridPane layoutX="20.0" layoutY="232.0" prefHeight="326.0" prefWidth="449.0">
+         <children>
+            <TextField fx:id="txtNomeM1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="332.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhador 1" wrappingWidth="149.908203125" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID capacete" wrappingWidth="105.548828125" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="2" />
+            <TextField fx:id="txtidcap1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="323.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" wrappingWidth="78.3828125" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtidneckdam1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="299.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID neck dam" wrappingWidth="116.548828125" GridPane.rowIndex="3">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tamanho" wrappingWidth="90.548828125" GridPane.rowIndex="4">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtTamanho1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="305.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhador 2" wrappingWidth="150.908203125" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtNomeM2" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="363.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" wrappingWidth="81.3828125" GridPane.rowIndex="6">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID capacete" wrappingWidth="116.548828125" GridPane.rowIndex="7">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID neck dam" wrappingWidth="112.548828125" GridPane.rowIndex="8">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tamanho" wrappingWidth="97.548828125" GridPane.rowIndex="9">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtidcap2" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="319.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <TextField fx:id="txtidneckdam2" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="336.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <TextField fx:id="txtTamanho2" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="306.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="82.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="229.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane layoutX="485.0" layoutY="410.0" prefHeight="65.0" prefWidth="432.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtcorrenteza" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="100.0" promptText="0.0 (NÓS)" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Correnteza" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vento" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Swell" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtvento" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="103.0" promptText="0.0 (NÓS)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <TextField fx:id="txtswell" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="103.0" promptText="0.0 (PÉS)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="17.0" layoutY="586.0" prefHeight="241.0" prefWidth="449.0">
+         <children>
+            <TextField fx:id="txtsupervisor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="307.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Supervisor assistente" wrappingWidth="193.548828125" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="2" />
+            <TextField fx:id="txtsupervisorassist" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="284.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Supervisor" wrappingWidth="132.3828125" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtoperador" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="318.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Operador de guincho" wrappingWidth="194.548828125" GridPane.rowIndex="3">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhador quadros" wrappingWidth="202.548828125" GridPane.rowIndex="4">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtmergulhadorquadros" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="330.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Operador compressor" wrappingWidth="201.548828125" GridPane.rowIndex="5">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhador de emergência" wrappingWidth="243.548828125" GridPane.rowIndex="6">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtoperadorcompressor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <TextField fx:id="txtmergulhadoremergencia" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="337.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhador de emed" wrappingWidth="182.548828125" GridPane.rowIndex="7">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtmergulhadoremed" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="312.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Outros" textAlignment="CENTER" wrappingWidth="74.908203125" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="205.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="215.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane layoutX="494.0" layoutY="519.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="174.0" prefWidth="194.0">
+        <columnConstraints>
+          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="200.0" minWidth="50.0" prefWidth="161.0" />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bailout Merg. 01" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bailout Merg. 02" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bailout Merg. 03" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cilindro Emerg. Merg.01" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cilindro Emerg. Merg.02 " GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="E. Painel / Suprimento " GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+         </children>
+      </GridPane>
+      <GridPane layoutX="785.0" layoutY="156.0" prefHeight="227.0" prefWidth="132.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="18.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Conversão PSI/BAR" wrappingWidth="150.79296875" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="textoPSI" strokeType="OUTSIDE" strokeWidth="0.0" text="PSI" wrappingWidth="25.79296875" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtpsi" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="50.0" promptText="0.00" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Text fx:id="textoBAR" strokeType="OUTSIDE" strokeWidth="0.0" text="BAR" wrappingWidth="31.79296875" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtbar" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" mouseTransparent="true" prefWidth="50.0" promptText="-" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Text fx:id="textoKGFCM" strokeType="OUTSIDE" strokeWidth="0.0" text="Kgf/cm²" wrappingWidth="60.79296875" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtkgf" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" mouseTransparent="true" prefWidth="50.0" promptText="-" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+         </children>
+      </GridPane>
+      <Button fx:id="btn_gravar_mergulho" layoutX="1185.0" layoutY="668.0" mnemonicParsing="false" onAction="#btn_gravar_mergulho" prefHeight="25.0" prefWidth="110.0" text="Gravar mergulho" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <GridPane layoutX="494.0" layoutY="732.0" prefHeight="94.0" prefWidth="795.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="422.0" minWidth="10.0" prefWidth="422.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="0.0" prefWidth="28.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="0.0" prefWidth="28.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="416.0" minWidth="10.0" prefWidth="345.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea fx:id="txtdescricao" prefHeight="68.0" prefWidth="389.0" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição do serviço/notas" wrappingWidth="225.3828125" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Procedimentos referência" wrappingWidth="207.548828125" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Text>
+            <TextArea fx:id="txtreferencia" prefHeight="68.0" prefWidth="276.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <ListView fx:id="listaMergulhos" layoutX="951.0" layoutY="159.0" onKeyPressed="#listaMergulhos_keyPressed" onMouseClicked="#listaMergulhos_mouseClicked" prefHeight="466.0" prefWidth="343.0" />
+      <Button fx:id="btn_excluir_mergulho" layoutX="1185.0" layoutY="635.0" mnemonicParsing="false" onAction="#btn_excluir_mergulho" prefHeight="25.0" prefWidth="110.0" text="Excluir mergulho">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <Button fx:id="btn_incluir" layoutX="952.0" layoutY="635.0" mnemonicParsing="false" onAction="#btn_incluir" prefHeight="25.0" prefWidth="111.0" text="Incluir mergulho">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btn_alterar" layoutX="1069.0" layoutY="635.0" mnemonicParsing="false" onAction="#btn_alterar" prefHeight="25.0" prefWidth="110.0" text="Alterar mergulho">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <GridPane layoutX="20.0" layoutY="159.0" prefHeight="65.0" prefWidth="304.0">
+        <columnConstraints>
+          <ColumnConstraints />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="151.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="153.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtDupla" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="N° do mergulho" GridPane.columnIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dupla" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtNumeroMergulho" prefHeight="25.0" prefWidth="302.0" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="680.0" layoutY="488.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="204.0" prefWidth="253.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="70.0" prefWidth="70.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="70.0" prefWidth="70.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="70.0" prefWidth="70.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Volume" wrappingWidth="59.79296875" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtvolumebm1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="50.0" promptText="11" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pressão" wrappingWidth="59.79296875" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtpressaobm1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="50.0" promptText="200" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Autonomia" wrappingWidth="88.79296875" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Text>
+            <TextField fx:id="txtautonomiabm1" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" mouseTransparent="true" prefHeight="0.0" prefWidth="50.0" promptText="-" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtvolumebm2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="50.0" promptText="11" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtpressaobm2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="50.0" promptText="200" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtautonomiabm2" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" mouseTransparent="true" prefHeight="0.0" prefWidth="50.0" promptText="-" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtvolumebm3" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="50.0" promptText="11" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtpressaobm3" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="50.0" promptText="200" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtautonomiabm3" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" mouseTransparent="true" prefWidth="50.0" promptText="-" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtvolumecilindro1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="50.0" promptText="50" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtpressaocilindro1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="50.0" promptText="200" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtautonomiacilindro1" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" mouseTransparent="true" prefWidth="50.0" promptText="-" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtvolumecilindro2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="50.0" promptText="50" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtpressaocilindro2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="50.0" promptText="200" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtautonomiacilindro2" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" mouseTransparent="true" prefWidth="50.0" promptText="-" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtvolumesuprimento" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="50.0" promptText="600" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtpressaosuprimento" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="50.0" promptText="200" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <TextField fx:id="txtautonomiasuprimento" alignment="CENTER" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" mouseTransparent="true" prefWidth="50.0" promptText="-" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+         </children>
+      </GridPane>
+      <Button fx:id="btn_cancelar_acoes" layoutX="1069.0" layoutY="668.0" mnemonicParsing="false" onAction="#btn_cancelar_acoes" prefHeight="25.0" prefWidth="110.0" text="Cancelar ação" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <Button fx:id="btn_checklist" layoutX="952.0" layoutY="668.0" mnemonicParsing="false" onAction="#btn_checklist" text="Prencher checklist">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <VBox layoutX="159.0" prefHeight="94.0" prefWidth="1006.0" style="-fx-background-color: #004D00;">
+         <children>
+            <GridPane prefHeight="94.0" prefWidth="1006.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="TELA DE CADASTRO - MERGULHOS" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox prefHeight="94.0" prefWidth="173.0" style="-fx-background-color: #004D00;">
+         <children>
+            <GridPane prefHeight="138.0" prefWidth="173.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btn_voltarPaginaRom" text="Voltar para ROM">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+            </GridPane>
+         </children></VBox>
+      <VBox layoutX="1163.0" prefHeight="94.0" prefWidth="153.0" style="-fx-background-color: #004D00;" />
+      <Text layoutX="87.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dados dos Mergulhadores" wrappingWidth="312.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="603.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dados do Mergulho" wrappingWidth="235.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="1063.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mergulhos" wrappingWidth="132.3828125">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <VBox layoutY="839.0" prefHeight="146.0" prefWidth="1316.0" style="-fx-background-color: #004D00;">
+         <children>
+            <GridPane prefHeight="183.0" prefWidth="1316.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btn_gravarRom" layoutX="1226.0" layoutY="106.0" mnemonicParsing="false" onAction="#btn_gravarRom" prefHeight="24.0" prefWidth="81.0" text="Gravar ROM" />
+                        <Text fill="WHITE" layoutX="1059.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Observações" wrappingWidth="103.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="txtObservacoesRom" layoutX="1006.0" layoutY="82.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="208.0" />
+                        <TextField fx:id="txtSupervisorRom" layoutX="775.0" layoutY="106.0" prefHeight="25.0" prefWidth="219.0" />
+                        <Text fill="WHITE" layoutX="807.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome do supervisor">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtContratante" layoutX="443.0" layoutY="106.0" prefHeight="25.0" prefWidth="150.0" />
+                        <TextField fx:id="txtLocalizacao" layoutX="217.0" layoutY="106.0" prefHeight="25.0" prefWidth="208.0" />
+                        <TextField fx:id="txtEmbarcacao" layoutX="14.0" layoutY="106.0" prefHeight="25.0" prefWidth="186.0" />
+                        <Text fill="WHITE" layoutX="11.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Embarcação/plataforma">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="276.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localização">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <DatePicker fx:id="dpRom" layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="139.0" />
+                        <Text fill="WHITE" layoutX="65.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="470.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contratante">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="592.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dados da ROM">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtNomeResponsavel" layoutX="605.0" layoutY="106.0" prefHeight="25.0" prefWidth="153.0" />
+                        <Text fill="WHITE" layoutX="592.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome do responsável">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</Pane>
